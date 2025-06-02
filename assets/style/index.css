@@ -1,17 +1,14 @@
 .content {
     background-color: var(--white);
-    margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 8px;
     max-width: var(--max-width);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-gap: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
     padding: 20px;
-
-    grid-template-areas: 
-        "title title"
-        "main-content side-nav"
-        "main-content .";
+    margin: 20px auto;
 }
 
 .title {
@@ -19,15 +16,23 @@
 }
 
 .main-content {
-    grid-area: main-content;
     background-color: #F0F8EA;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
 }
 
 .side-nav {
-    grid-area: side-nav;
     background-color: #F5F5F5;
     padding: 20px;
     border-radius: 8px;
@@ -36,7 +41,11 @@
     position: sticky;
     top: 20px;
     overflow-y: auto;
+    min-width: 300px;
+    height: fit-content;
+    display: inline-block;
 }
+
 .content h2 {
     color: var(--dark-blue);
     border-bottom: 3px solid var(--yellow);
@@ -60,7 +69,7 @@
     padding-left: 10px;
 }
 
-.main-content p {
+.content-text {
     color: var(--black);
     font-size: 1rem;
     margin-bottom: 15px;
@@ -95,6 +104,45 @@
     margin-bottom: 10px;
 }
 
-.review-rating {
+.review .review-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.review .review-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    align-items: center;
+}
+
+.review .review-rating {
     color: var(--yellow);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+}
+
+.review .review-rating .line-md--star-alt-filled {
+    color: var(--yellow);
+}
+
+.review .review-data .mdi--dot {
+    color: var(--black);
+}
+
+.review .review-author {
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin-bottom: 0;
+}
+
+.review .review-date {
+    margin-bottom: 0;
 }
