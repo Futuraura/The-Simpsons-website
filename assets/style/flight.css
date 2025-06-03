@@ -37,6 +37,103 @@ body {
     background-color: var(--light-blue);
 }
 
+/* Main Content Layout */
+.content {
+    background-color: var(--white);
+    border-radius: 8px;
+    max-width: var(--max-width);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.main-content {
+    background-color: #F0F8EA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-nav {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--dark-blue);
+    position: sticky;
+    top: 20px;
+    overflow-y: auto;
+    min-width: 300px;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+/* Typography */
+.content h2 {
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--yellow);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content p {
+    color: var(--black);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.main-content h3 {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--yellow);
+    padding-left: 10px;
+}
+
+.content-text {
+    color: var(--black);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.side-nav h3 {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.side-nav li {
+    color: var(--dark-blue);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.side-nav li span {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
 .line-md--star-alt-filled {
   display: inline-block;
   width: 24px;

@@ -1,0 +1,30 @@
+.springfield-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.springfield-places {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.springfield-places img{
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0;
+    width: 100%;
+}
+
+.springfield-places img:hover{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transform: scale(1.05);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
