@@ -1,0 +1,41 @@
+[
+    {
+        "id": 3,
+        "name": "Kwik-E-Mart",
+        "url": "kwik-e-mart",
+        "preview": "assets/images/places/kwik-e-mart.webp",
+        "images": [
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp"
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Moe's Tavern",
+        "url": "moe-s",
+        "preview": "assets/images/places/moe-s.webp",
+        "images": [
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Simpson's Home",
+        "url": "742evergreen",
+        "preview": "assets/images/places/simpsons-home.webp",
+        "images": [
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp",
+            "https://placehold.co/1240x740/FFF/000/webp"
+        ]
+    }
+]

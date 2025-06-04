@@ -1,31 +1,14 @@
-let reviews = [
-{
-    id: 1,
-    author: "Someone",
-    review: "Something Lorem ipsum calor sit omet whatever shit",
-    date: "Date n' time",
-    rating: 9.8
-},
-{
-    id: 2,
-    author: "Author Name",
-    review: "An amazing show that satirizes American culture.",
-    date: "Someday in 20205",
-    rating: 5
-},
-{
-    id: 3,
-    author: "Someone",
-    review: "The review content",
-    date: "Someday in 2030",
-    rating: 3.5
-}
-]
+const reviewsDiv = document.getElementById("reviews");
 
-const reviewsDiv = document.getElementById("reviews")
+fetch('assets/data/reviews.json')
+    .then(response => response.json())
+    .then(reviews => {
+        populateReviews(reviews);
+    })
+    .catch(error => console.error('Error loading reviews:', error));
 
-function populateReviews() {
-    reviewsDiv.innerHTML = ""
+function populateReviews(reviews) {
+    reviewsDiv.innerHTML = "";
     reviews.forEach(review => {
         const reviewElement = document.createElement('div');
         reviewElement.className = "review";
@@ -43,5 +26,3 @@ function populateReviews() {
         reviewsDiv.appendChild(reviewElement);
     });
 }
-
-populateReviews()
