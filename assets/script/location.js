@@ -4,6 +4,7 @@ const locations = [
     {
         id: 1,
         name: "Moe's Tavern",
+        url: "moe-s",
         images: [
             "https://placehold.co/1240x740/FFF/000/webp",
             "https://placehold.co/1240x740/FFF/000/webp",
@@ -15,6 +16,7 @@ const locations = [
     {
         id: 2,
         name: "Simpson's Home",
+        url: "742evergreen",
         images: [
             "https://placehold.co/1240x740/FFF/000/webp",
             "https://placehold.co/1240x740/FFF/000/webp",
@@ -26,6 +28,7 @@ const locations = [
     {
         id: 3,
         name: "Kwik-E-Mart",
+        url: "kwik-e-mart",
         images: [
             "https://placehold.co/1240x740/FFF/000/webp",
             "https://placehold.co/1240x740/FFF/000/webp",
@@ -36,33 +39,30 @@ const locations = [
     }
 ];
 
+function handleLocation() {
+    const place = new URL(window.location.href).searchParams.get("place");
+    const location = locations.find(loc => loc.url === place);
+
+    if (!place) {
+        contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
+        console.log("No place specified, returning 404");
+        return;
+    } else if (location) {
+        populateContent(location.id);
+        console.log(`Opening location: ${location.name}`);
+    } else {
+        contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
+        console.log("Location not found, returning 404");
+        return;
+    }
+}
+
 function populateContent(id) {
     const location = locations.find(loc => loc.id === id);
     document.getElementById("location-title").textContent = location.name;
     location.images.forEach(image => {
         document.getElementById("location-images").innerHTML += `<img src="${image}" alt="${location.name}" onClick="openImage('${image}')" class="location-image">`;
     });
-}
-
-function handleLocation() {
-    const place = new URL(window.location.href).searchParams.get("place");
-    switch (place) {
-        case "moe-s":
-            console.log("Opening Moe's");
-            populateContent(1);
-            break;
-        case "742evergreen":
-            console.log("Opening Simpson's home");
-            populateContent(2);
-            break;
-        case "kwik-e-mart":
-            console.log("Entering Kwik E' Mart");
-            populateContent(3);
-            break;
-        default:
-            contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-            console.log("Not found, returning 404");
-    }
 }
 
 function openImage(src) {
