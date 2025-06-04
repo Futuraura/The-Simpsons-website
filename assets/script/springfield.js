@@ -7,7 +7,7 @@ const locations = [
     {
         name: "Moe's Tavern",
         image: "assets/images/places/moes-tavern.webp",
-        place: "moes-tavern",
+        place: "moe-s",
     },
     {
         name: "The Simpsons' House",

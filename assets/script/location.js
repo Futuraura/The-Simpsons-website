@@ -40,24 +40,50 @@ function populateContent(id) {
     const location = locations.find(loc => loc.id === id);
     document.getElementById("location-title").textContent = location.name;
     location.images.forEach(image => {
-        document.getElementById("location-images").innerHTML += `<img src="${image}" alt="${location.name}">`;
+        document.getElementById("location-images").innerHTML += `<img src="${image}" alt="${location.name}" onClick="openImage('${image}')" class="location-image">`;
     });
 }
 
-switch (new URL(window.location.href).searchParams.get("place")) {
-    case "moes":
-        console.log("Opening Moe's");
-        populateContent(1);
-        break;
-    case "742evergreen":
-        console.log("Opening Simpson's home");
-        populateContent(2);
-        break;
-    case "kwik-e-mart":
-        console.log("Entering Kwik E' Mart");
-        populateContent(3);
-        break;
-    default:
-        contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-        console.log("Not found, returning 404");
+function handleLocation() {
+    const place = new URL(window.location.href).searchParams.get("place");
+    switch (place) {
+        case "moe-s":
+            console.log("Opening Moe's");
+            populateContent(1);
+            break;
+        case "742evergreen":
+            console.log("Opening Simpson's home");
+            populateContent(2);
+            break;
+        case "kwik-e-mart":
+            console.log("Entering Kwik E' Mart");
+            populateContent(3);
+            break;
+        default:
+            contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
+            console.log("Not found, returning 404");
+    }
 }
+
+function openImage(src) {
+    const locationImages = document.getElementById("location-images");
+    const img = document.createElement("img");
+    const backButton = document.getElementById("backButton");
+
+    locationImages.innerHTML = "";
+    locationImages.classList = ("opened-image");
+
+    backButton.style.display = "block";
+    backButton.onclick = function() {
+        locationImages.classList.remove("opened-image");
+        locationImages.classList.add("location-images");
+        locationImages.innerHTML = "";
+        backButton.style.display = "none";
+        handleLocation();
+    };
+
+    img.src = src;
+    locationImages.appendChild(img);
+}
+
+handleLocation();
