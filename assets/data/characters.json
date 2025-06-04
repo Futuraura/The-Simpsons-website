@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "name": "Example Person",
+        "url": "example-person",
+        "description": "This is an example character.",
+        "preview": "https://placehold.co/1240x740/FFF/000/webp",
+        "voiceactor": "Jane Doe",
+        "audio-clips": [
+            "https://example.com/audio/alice-1.mp3",
+            "https://example.com/audio/alice-2.mp3",
+            "https://example.com/audio/alice-3.mp3"
+        ],
+        "voiceactor-image": "https://placehold.co/512x512/FFF/000/webp",
+        "memes": [
+            "https://placehold.co/600x900/FFF/000/webp",
+            "https://placehold.co/512x512/FFF/000/webp",
+            "https://placehold.co/1024x796/FFF/000/webp",
+            "https://placehold.co/589x1440/FFF/000/webp",
+            "https://placehold.co/1920x1080/FFF/000/webp"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Example Person",
+        "url": "example-person",
+        "description": "This is an example character.",
+        "preview": "https://placehold.co/1240x740/FFF/000/webp",
+        "voiceactor": "Jane Doe",
+        "audio-clips": [
+            "https://example.com/audio/alice-1.mp3",
+            "https://example.com/audio/alice-2.mp3",
+            "https://example.com/audio/alice-3.mp3"
+        ],
+        "voiceactor-image": "https://placehold.co/512x512/FFF/000/webp",
+        "memes": [
+            "https://placehold.co/600x900/FFF/000/webp",
+            "https://placehold.co/512x512/FFF/000/webp",
+            "https://placehold.co/1024x796/FFF/000/webp",
+            "https://placehold.co/589x1440/FFF/000/webp",
+            "https://placehold.co/1920x1080/FFF/000/webp"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Example Person",
+        "url": "example-person",
+        "description": "This is an example character.",
+        "preview": "https://placehold.co/1240x740/FFF/000/webp",
+        "voiceactor": "Jane Doe",
+        "audio-clips": [
+            "https://example.com/audio/alice-1.mp3",
+            "https://example.com/audio/alice-2.mp3",
+            "https://example.com/audio/alice-3.mp3"
+        ],
+        "voiceactor-image": "https://placehold.co/512x512/FFF/000/webp",
+        "memes": [
+            "https://placehold.co/600x900/FFF/000/webp",
+            "https://placehold.co/512x512/FFF/000/webp",
+            "https://placehold.co/1024x796/FFF/000/webp",
+            "https://placehold.co/589x1440/FFF/000/webp",
+            "https://placehold.co/1920x1080/FFF/000/webp"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Example Person",
+        "url": "example-person",
+        "description": "This is an example character.",
+        "preview": "https://placehold.co/1240x740/FFF/000/webp",
+        "voiceactor": "Jane Doe",
+        "audio-clips": [
+            "https://example.com/audio/alice-1.mp3",
+            "https://example.com/audio/alice-2.mp3",
+            "https://example.com/audio/alice-3.mp3"
+        ],
+        "voiceactor-image": "https://placehold.co/512x512/FFF/000/webp",
+        "memes": [
+            "https://placehold.co/600x900/FFF/000/webp",
+            "https://placehold.co/512x512/FFF/000/webp",
+            "https://placehold.co/1024x796/FFF/000/webp",
+            "https://placehold.co/589x1440/FFF/000/webp",
+            "https://placehold.co/1920x1080/FFF/000/webp"
+        ]
+    }
+]
