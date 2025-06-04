@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
     border-bottom: 3px solid var(--yellow);
     padding-bottom: 10px;
 }
@@ -83,5 +82,5 @@
     height: 100%;
     object-fit: cover;
     outline: 2px solid var(--black);
-    border-radius: 8px;
+    border-radius: 20px;
 }
