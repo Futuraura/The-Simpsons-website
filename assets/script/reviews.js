@@ -19,7 +19,7 @@ let reviews = [
     review: "The review content",
     date: "Someday in 2030",
     rating: 3.5
-},
+}
 ]
 
 const reviewsDiv = document.getElementById("reviews")
