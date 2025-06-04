@@ -11,6 +11,7 @@
 
     --max-width: 1600px;
     --banner-height: 350px;
+    --amount-of-columns-on-location-page: 3;
 }
 
 * {

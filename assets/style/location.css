@@ -17,7 +17,19 @@
 }
 
 .location-details {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.location-images {
+    display: grid;
+    grid-template-columns: repeat(var(--amount-of-columns-on-location-page), 1fr);
+    gap: 20px;
+}
+
+.location-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
