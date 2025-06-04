@@ -1,6 +1,9 @@
 .error404{
     color: red;
     font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .error404-description {

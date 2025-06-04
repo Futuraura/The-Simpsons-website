@@ -13,7 +13,7 @@ const locations = [
         name: "The Simpsons' House",
         image: "assets/images/places/742-evergreen-terrace.webp",
         place: "742evergreen",
-    },
+    }
 ]
 
 const locationsList = document.getElementById("springfield-places");
