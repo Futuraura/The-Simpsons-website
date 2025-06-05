@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Simpsons Page</title>
+    <link rel="stylesheet" href="assets/style/flight.css">
+    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/character.css">
+    <script src="assets/script/banner.js" defer></script>
+    <script src="assets/script/character.js" defer></script>
+</head>
+<body>
+    <!-- Header and nav -->
+    <header class="banner" id="banner">
+        <div class="logo-container">
+            <img src="assets/images/logo.svg" alt="The Simpsons Logo" width="200" height="100" class="banner-logo">
+            <h1 class="banner-text">The Simpsons Page</h1>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="button-container">
+            <a href="index.html">Home</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="characters.html">Characters</a>
+            <a href="forum.html">Forum</a>
+        </div>
+    </nav>
+    <main class="content-wrapper" id="content-wrapper">
+        <div class="tab-nav">
+            <button class="backbutton" onclick="window.location.href = 'characters.html'">Back</button>
+            <button onclick="renderCharacters()">Info</button>
+            <button onclick="renderMemes()">Memes</button>
+        </div>
+        <div class="content" id="content">
+            <img id="character-preview" src="https://placehold.co/600x900/FFF/000/webp" alt="Image of Example Person">
+            <div>
+                <h2 id="character-details-title" class="title">Character Details</h2>
+                <h3 id="character-name">Example Person</h3>
+                <p id="character-description" class="content-text">This is an example character.</p>
+                <div id="voice-actor-section" class="voice-actor">
+                    <h2 id="voice-actor-title">Voice Actor</h2>
+                    <div id="voice-actor-details" class="voice-actor-details">
+                        <img id="voice-actor-image" src="https://placehold.co/512x512/FFF/000/webp" alt="Jane Doe">
+                        <h3 id="voice-actor-name">Jane Doe</h3>
+                    </div>
+                    <div id="voice-clips-section" class="voice-clips">
+                        <h4 id="voice-clips-title">Voice Clips</h4>
+                        <div id="voice-clips-list" class="voice-clips-list">
+                            <audio src="https://example.com/audio/alice-1.mp3"></audio>
+                            <audio src="https://example.com/audio/alice-2.mp3"></audio>
+                            <audio src="https://example.com/audio/alice-3.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

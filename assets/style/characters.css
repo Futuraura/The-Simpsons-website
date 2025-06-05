@@ -30,12 +30,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.location-overlay {
+.character-overlay {
     position: relative;
     display: inline-block;
 }
 
-.location-name {
+.character-name {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -51,6 +51,6 @@
     transition: opacity 0.3s ease;
 }
 
-.location-overlay:hover .location-name {
+.character-overlay:hover .character-name {
     opacity: 1;
 }

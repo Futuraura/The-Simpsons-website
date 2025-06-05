@@ -1,3 +1,8 @@
+function renderNotFound() {
+    const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested character does not exist.</p>";
+}
+
 fetch('assets/data/locations.json')
     .then(response => response.json())
     .then(locations => {
@@ -6,14 +11,11 @@ fetch('assets/data/locations.json')
         const location = locations.find(loc => loc.url === place);
 
         if (!place) {
-            contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-            console.log("No place specified, returning 404");
+            renderNotFound();
         } else if (location) {
             populateContent(location);
-            console.log(`Opening location: ${location.name}`);
         } else {
-            contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-            console.log("Location not found, returning 404");
+            renderNotFound();
         }
 
         function populateContent(location) {
@@ -54,14 +56,11 @@ function handleLocation() {
             const location = locations.find(loc => loc.url === place);
 
             if (!place) {
-                contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-                console.log("No place specified, returning 404");
+                renderNotFound();
             } else if (location) {
                 populateContent(location);
-                console.log(`Opening location: ${location.name}`);
             } else {
-                contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested location does not exist.</p>";
-                console.log("Location not found, returning 404");
+                renderNotFound();
             }
 
             function populateContent(location) {
