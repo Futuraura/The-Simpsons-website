@@ -144,5 +144,35 @@
             "https://placehold.co/512x512/87CEEB/000/webp",
             "https://placehold.co/1024x796/87CEEB/000/webp"
         ]
+    },
+    {
+        "id": "6",
+        "name": "Ned Flanders",
+        "url": "ned-flanders",
+        "description": "Homer's cheerful, religious neighbor who's always willing to lend a hand.",
+        "preview": "https://placehold.co/1240x740/7CFC00/000/webp",
+        "voiceActor": {
+            "name": "Harry Shearer",
+            "photo": "https://placehold.co/512x512/7CFC00/000/webp"
+        },
+        "voiceClips": [
+            {
+                "source": "https://example.com/audio/ned-1.mp3",
+                "title": "Ned Clip 1"
+            },
+            {
+                "source": "https://example.com/audio/ned-2.mp3",
+                "title": "Ned Clip 2"
+            },
+            {
+                "source": "https://example.com/audio/ned-3.mp3",
+                "title": "Ned Clip 3"
+            }
+        ],
+        "memes": [
+            "https://placehold.co/600x900/7CFC00/000/webp",
+            "https://placehold.co/512x512/7CFC00/000/webp",
+            "https://placehold.co/1024x796/7CFC00/000/webp"
+        ]
     }
 ]

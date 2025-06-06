@@ -156,7 +156,20 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.full-screen-meme {
-    width: 100%;
-    height: 100%;
+.closeMemesButton{
+    padding: 10px 20px;
+    background: var(--red);
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.closeMemesButton:hover {
+    background: var(--dark-blue);
+    color: var(--white);
 }

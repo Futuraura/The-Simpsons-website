@@ -65,7 +65,7 @@ function populateCharacterContent() {
             memeElement.src = meme;
             
             memeContainer.onclick = function() {
-            openImage(meme);
+                openImage(meme);
             };
             
             memeContainer.appendChild(memeElement);
@@ -88,25 +88,24 @@ function switchToContent() {
     content.style.display = 'grid';
 }
 
+function closeImage() {
+    const img = document.getElementById("full-screen-meme");
+    const imgimg = document.getElementById("full-screen-meme-image");
+    const memesDiv = document.getElementById('memes-content');
+
+    imgimg.src = "";
+    img.style.display = "none";
+    memesDiv.style.display = 'grid';
+}
+
 function openImage(src) {
-    const img = document.createElement("img");
-    const backButton = document.getElementById("backButton");
+    const img = document.getElementById("full-screen-meme");
+    const imgimg = document.getElementById("full-screen-meme-image");
+    const memesDiv = document.getElementById('memes-content');
 
-    const memesDiv = document.getElementById('memes-wrapper');
-    memesDiv.innerHTML = "";
-    memesDiv.classList.add("opened-image");
-
-    backButton.style.display = "block";
-    backButton.onclick = function () {
-        memesDiv.classList.remove("opened-image");
-        memesDiv.classList.add("memes-wrapper");
-        memesDiv.innerHTML = "";
-        backButton.style.display = "none";
-        switchToContent();
-    };
-
-    img.src = src;
-    memesDiv.appendChild(img);
+    imgimg.src = src;
+    img.style.display = "block"
+    memesDiv.style.display = 'none';
 }
 
 populateCharacterContent();
