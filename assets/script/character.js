@@ -1,97 +1,112 @@
+const contentElement = document.getElementById('content');
+const characterPreviewElement = document.getElementById('character-preview');
+const characterNameElement = document.getElementById('character-name');
+const characterDescriptionElement = document.getElementById('character-description');
+const voiceActorImageElement = document.getElementById('voice-actor-image');
+const voiceActorNameElement = document.getElementById('voice-actor-name');
+const voiceClipsListElement = document.getElementById('voice-clips-list');
+
 function renderNotFound() {
-    const contentDiv = document.getElementById("content");
-    contentDiv.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested character does not exist.</p>";
+    contentElement.innerHTML = "<h1 class=\"error404\">404 Not Found</h1><p class=\"error404-description\">The requested character does not exist.</p>";
 }
 
-function renderCharacters() {
-    const contentDiv = document.getElementById("content");
-    contentDiv.innerHTML = "";
-    contentDiv.innerHTML = `
-    <img id="character-preview" src="https://placehold.co/600x900/FFF/000/webp" alt="Image of Example Person">
-    <div>
-        <h2 id="character-details-title" class="title">Character Details</h2>
-        <h3 id="character-name"></h3>
-        <p id="character-description" class="content-text"></p>
-        <div id="voice-actor-section" class="voice-actor">
-            <h2 id="voice-actor-title">Voice Actor</h2>
-            <div id="voice-actor-details" class="voice-actor-details">
-                <img id="voice-actor-image" src="" alt="Jane Doe">
-                <h3 id="voice-actor-name"></h3>
-            </div>
-            <div id="voice-clips-section" class="voice-clips">
-                <h4 id="voice-clips-title">Voice Clips</h4>
-                <div id="voice-clips-list" class="voice-clips-list">
-                </div>
-            </div>
-        </div>
-    </div>`
+function getAudioType(source) {
+    const audioType = source.split('.').pop();
+    switch (audioType) {
+        case 'mp3':
+            return 'audio/mpeg';
+        case 'ogg':
+            return 'audio/ogg';
+        case 'wav':
+            return 'audio/wav';
+        default:
+            return 'audio/mpeg';
+    }
+}
 
-    let ids = {
-        characterPreview: document.getElementById('character-preview'),
-        characterName: document.getElementById('character-name'),
-        characterDescription: document.getElementById('character-description'),
-        voiceActorSection: document.getElementById('voice-actor-section'),
-        voiceActorImage: document.getElementById('voice-actor-image'),
-        voiceActorName: document.getElementById('voice-actor-name'),
-        voiceClipsList: document.getElementById('voice-clips-list')
-    };
-
+function populateCharacterContent() {
     fetch('assets/data/characters.json')
     .then(response => response.json())
     .then(characters => {
-        const contentDiv = document.getElementById("content");
-        const characterUrl = new URL(window.location.href).searchParams.get("character");
-        const character = characters.find(char => char.url === characterUrl);
+        const characterName = new URL(window.location.href).searchParams.get("character");
+        const character = characters.find(char => char.url === characterName);
 
-        if (character) {
-            populateCharacterContent(character);
-        } else if (!characterUrl) {
+        if (!characterName || !character) {
             renderNotFound();
-        } else if (!character) {
-            renderNotFound();
+            return;
         }
+
+        characterPreviewElement.src = character.preview;
+        characterName.textContent = character.name;
+        characterDescriptionElement.textContent = character.description;
+        voiceActorImageElement.src = character.voiceActor.photo;
+        voiceActorNameElement.textContent = character.voiceActor.name;
+        voiceClipsListElement.innerHTML = '';
+        character.voiceClips.forEach(clip => {
+            const clipElement = document.createElement('div');
+            clipElement.className = 'voice-clip-wrapper';
+            clipElement.innerHTML = `
+                <span class="voice-clip-title">${clip.title}</span>
+                <audio controls class="voice-clip">
+                    <source src="${clip.source}" type="${getAudioType(clip.source)}">
+                </audio>
+            `;
+            voiceClipsListElement.appendChild(clipElement);
+        });
         
-        function populateCharacterContent(character) {
-            ids.characterPreview.src = character.preview;
-            ids.characterName.textContent = character.name;
-            ids.characterDescription.textContent = character.description;
-
-            ids.voiceActorSection.style.display = 'block';
-            ids.voiceActorImage.src = character.voiceactorimage;
-            ids.voiceActorName.textContent = character.voiceactor;
-
-            ids.voiceClipsList.innerHTML = '';
-            character.audioclips.forEach(clip => {
-                const audioItem = document.createElement('audio');
-                audioItem.src = clip
-                ids.voiceClipsList.appendChild(audioItem);
-            });
-        }
+        const memeDiv = document.getElementById('memes');
+        memeDiv.innerHTML = '';
+        character.memes.forEach(meme => {
+            const memeContainer = document.createElement('div');
+            memeContainer.className = 'meme-container';
+            
+            const memeElement = document.createElement('img');
+            memeElement.className = 'meme';
+            memeElement.src = meme;
+            
+            memeContainer.onclick = function() {
+            openImage(meme);
+            };
+            
+            memeContainer.appendChild(memeElement);
+            memeDiv.appendChild(memeContainer);
+        });
     })
 }
 
-function renderMemes() {
-    fetch('assets/data/characters.json')
-    .then(response => response.json())
-    .then(characters => {
-        const contentDiv = document.getElementById("content");
-        contentDiv.innerHTML = ""; // Clear out the contentDiv
-        const characterUrl = new URL(window.location.href).searchParams.get("character");
-        const character = characters.find(char => char.url === characterUrl);
-
-        if (character && character.memes && character.memes.length > 0) {
-            character.memes.forEach(meme => {
-                const memeImg = document.createElement("img");
-                memeImg.src = meme;
-                memeImg.alt = "Meme";
-                memeImg.classList.add("meme-thumbnail");
-                memeImg.onclick = () => openMeme(meme);
-                contentDiv.appendChild(memeImg);
-            });
-        } else {
-            renderNotFound()
-        }
-    });
+function switchToMemes() {
+    const memesDiv = document.getElementById('memes-wrapper');
+    const content = document.getElementById('content');
+    memesDiv.style.display = 'flex';
+    content.style.display = 'none';
 }
 
-renderCharacters();
+function switchToContent() {
+    const memesDiv = document.getElementById('memes-wrapper');
+    const content = document.getElementById('content');
+    memesDiv.style.display = 'none';
+    content.style.display = 'grid';
+}
+
+function openImage(src) {
+    const img = document.createElement("img");
+    const backButton = document.getElementById("backButton");
+
+    const memesDiv = document.getElementById('memes-wrapper');
+    memesDiv.innerHTML = "";
+    memesDiv.classList.add("opened-image");
+
+    backButton.style.display = "block";
+    backButton.onclick = function () {
+        memesDiv.classList.remove("opened-image");
+        memesDiv.classList.add("memes-wrapper");
+        memesDiv.innerHTML = "";
+        backButton.style.display = "none";
+        switchToContent();
+    };
+
+    img.src = src;
+    memesDiv.appendChild(img);
+}
+
+populateCharacterContent();
