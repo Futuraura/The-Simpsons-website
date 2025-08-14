@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="assets/style/flight.css" />
     <link rel="stylesheet" href="assets/style/header.css" />
     <link rel="stylesheet" href="assets/style/forum.css" />
-    <script src="assets/script/banner.js" defer></script>
-    <script src="assets/script/forum.js" defer></script>
   </head>
   <body>
     <!-- Header and nav -->
@@ -33,12 +31,37 @@
       </div>
     </nav>
     <dialog class="newPostDialog" id="newPostDialog">
-      <form action="post"></form>
+      <div class="dialog-content">
+        <h2>Create New Post</h2>
+        <form action="post">
+          <div class="form-group">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="postTitle" required />
+          </div>
+          <div class="form-group">
+            <label for="postContent">Content:</label>
+            <textarea
+              id="postContent"
+              name="postContent"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">Post</button>
+            <button type="button" class="cancel-btn" id="cancelButton">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
     </dialog>
     <main class="content">
       <button id="newForumPost" class="newPostButton">New post</button>
       <h1 class="forumFirstHeader">Forum Posts</h1>
       <div class="forumPostsContainer" id="forumPosts"></div>
     </main>
+    <script src="assets/script/banner.js"></script>
+    <script src="assets/script/forum.js"></script>
   </body>
 </html>
