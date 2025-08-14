@@ -1,56 +1,56 @@
 /* Index page specific styles */
 
 .title {
-    grid-area: title;
+  grid-area: title;
 }
 
 /* Review styles */
 .review {
-    background-color: #F9F9F9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .review .review-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
 
 .review .review-data {
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
 }
 
 .review .review-rating {
-    color: var(--yellow);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-bottom: 0;
-    align-items: center;
-    display: flex;
+  color: var(--yellow);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 0;
+  align-items: center;
+  display: flex;
 }
 
 .review .review-rating .line-md--star-alt-filled {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .review .review-data .mdi--dot {
-    color: var(--black);
+  color: var(--black);
 }
 
 .review .review-author {
-    font-weight: bold;
-    color: var(--dark-blue);
-    margin-bottom: 0;
+  font-weight: bold;
+  color: var(--dark-blue);
+  margin-bottom: 0;
 }
 
 .review .review-date {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }

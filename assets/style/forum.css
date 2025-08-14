@@ -1,0 +1,32 @@
+.forumFirstHeader {
+  font-weight: bolder;
+  font-size: 32px;
+  color: black;
+  border-bottom: 2px solid lightgray;
+  width: 100%;
+}
+
+.newPostButton {
+  padding: 10px 15px;
+  background: white;
+  color: black;
+  border: 2px solid var(--dark-blue);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.newPostButton:hover {
+  background: var(--dark-blue);
+  color: white;
+  cursor: pointer;
+  border-color: var(--dark-blue);
+}
+
+.content {
+  justify-content: left;
+  align-items: start;
+  flex-direction: column;
+}

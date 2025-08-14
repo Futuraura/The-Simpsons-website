@@ -1,178 +1,178 @@
 [
-    {
-        "id": "5",
-        "name": "Homer Simpson",
-        "url": "homer-simpson",
-        "description": "The lovable, clumsy father of the Simpson family.",
-        "preview": "https://placehold.co/1240x740/FFD700/000/webp",
-        "voiceActor": {
-            "name": "Dan Castellaneta",
-            "photo": "https://placehold.co/512x512/FFD700/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/homer-1.mp3",
-                "title": "Homer Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/homer-2.mp3",
-                "title": "Homer Clip 2"
-            },
-            {
-                "source": "https://example.com/audio/homer-3.mp3",
-                "title": "Homer Clip 3"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/FFD700/000/webp",
-            "https://placehold.co/512x512/FFD700/000/webp",
-            "https://placehold.co/1024x796/FFD700/000/webp"
-        ]
+  {
+    "id": "5",
+    "name": "Homer Simpson",
+    "url": "homer-simpson",
+    "description": "The lovable, clumsy father of the Simpson family.",
+    "preview": "https://placehold.co/1240x740/FFD700/000/webp",
+    "voiceActor": {
+      "name": "Dan Castellaneta",
+      "photo": "https://placehold.co/512x512/FFD700/000/webp"
     },
-    {
-        "id": "1",
-        "name": "Marge Simpson",
-        "url": "marge-simpson",
-        "description": "The patient, caring mother of the Simpson family.",
-        "preview": "https://placehold.co/1240x740/8D58E3/000/webp",
-        "voiceActor": {
-            "name": "Julie Kavner",
-            "photo": "https://placehold.co/512x512/8D58E3/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/marge-1.mp3",
-                "title": "Marge Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/marge-2.mp3",
-                "title": "Marge Clip 2"
-            },
-            {
-                "source": "https://example.com/audio/marge-3.mp3",
-                "title": "Marge Clip 3"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/8D58E3/000/webp",
-            "https://placehold.co/512x512/8D58E3/000/webp",
-            "https://placehold.co/1024x796/8D58E3/000/webp"
-        ]
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/homer-1.mp3",
+        "title": "Homer Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/homer-2.mp3",
+        "title": "Homer Clip 2"
+      },
+      {
+        "source": "https://example.com/audio/homer-3.mp3",
+        "title": "Homer Clip 3"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/FFD700/000/webp",
+      "https://placehold.co/512x512/FFD700/000/webp",
+      "https://placehold.co/1024x796/FFD700/000/webp"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Marge Simpson",
+    "url": "marge-simpson",
+    "description": "The patient, caring mother of the Simpson family.",
+    "preview": "https://placehold.co/1240x740/8D58E3/000/webp",
+    "voiceActor": {
+      "name": "Julie Kavner",
+      "photo": "https://placehold.co/512x512/8D58E3/000/webp"
     },
-    {
-        "id": "2",
-        "name": "Bart Simpson",
-        "url": "bart-simpson",
-        "description": "The mischievous, rebellious son who's always up to no good.",
-        "preview": "https://placehold.co/1240x740/FF6347/000/webp",
-        "voiceActor": {
-            "name": "Nancy Cartwright",
-            "photo": "https://placehold.co/512x512/FF6347/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/bart-1.mp3",
-                "title": "Bart Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/bart-2.mp3",
-                "title": "Bart Clip 2"
-            },
-            {
-                "source": "https://example.com/audio/bart-3.mp3",
-                "title": "Bart Clip 3"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/FF6347/000/webp",
-            "https://placehold.co/512x512/FF6347/000/webp",
-            "https://placehold.co/1024x796/FF6347/000/webp"
-        ]
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/marge-1.mp3",
+        "title": "Marge Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/marge-2.mp3",
+        "title": "Marge Clip 2"
+      },
+      {
+        "source": "https://example.com/audio/marge-3.mp3",
+        "title": "Marge Clip 3"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/8D58E3/000/webp",
+      "https://placehold.co/512x512/8D58E3/000/webp",
+      "https://placehold.co/1024x796/8D58E3/000/webp"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Bart Simpson",
+    "url": "bart-simpson",
+    "description": "The mischievous, rebellious son who's always up to no good.",
+    "preview": "https://placehold.co/1240x740/FF6347/000/webp",
+    "voiceActor": {
+      "name": "Nancy Cartwright",
+      "photo": "https://placehold.co/512x512/FF6347/000/webp"
     },
-    {
-        "id": "3",
-        "name": "Lisa Simpson",
-        "url": "lisa-simpson",
-        "description": "The brilliant, socially conscious middle child of the family.",
-        "preview": "https://placehold.co/1240x740/FF69B4/000/webp",
-        "voiceActor": {
-            "name": "Yeardley Smith",
-            "photo": "https://placehold.co/512x512/FF69B4/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/lisa-1.mp3",
-                "title": "Lisa Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/lisa-2.mp3",
-                "title": "Lisa Clip 2"
-            },
-            {
-                "source": "https://example.com/audio/lisa-3.mp3",
-                "title": "Lisa Clip 3"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/FF69B4/000/webp",
-            "https://placehold.co/512x512/FF69B4/000/webp",
-            "https://placehold.co/1024x796/FF69B4/000/webp"
-        ]
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/bart-1.mp3",
+        "title": "Bart Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/bart-2.mp3",
+        "title": "Bart Clip 2"
+      },
+      {
+        "source": "https://example.com/audio/bart-3.mp3",
+        "title": "Bart Clip 3"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/FF6347/000/webp",
+      "https://placehold.co/512x512/FF6347/000/webp",
+      "https://placehold.co/1024x796/FF6347/000/webp"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Lisa Simpson",
+    "url": "lisa-simpson",
+    "description": "The brilliant, socially conscious middle child of the family.",
+    "preview": "https://placehold.co/1240x740/FF69B4/000/webp",
+    "voiceActor": {
+      "name": "Yeardley Smith",
+      "photo": "https://placehold.co/512x512/FF69B4/000/webp"
     },
-    {
-        "id": "4",
-        "name": "Maggie Simpson",
-        "url": "maggie-simpson",
-        "description": "The baby of the family who's surprisingly resourceful.",
-        "preview": "https://placehold.co/1240x740/87CEEB/000/webp",
-        "voiceActor": {
-            "name": "Various",
-            "photo": "https://placehold.co/512x512/87CEEB/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/maggie-1.mp3",
-                "title": "Maggie Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/maggie-2.mp3",
-                "title": "Maggie Clip 2"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/87CEEB/000/webp",
-            "https://placehold.co/512x512/87CEEB/000/webp",
-            "https://placehold.co/1024x796/87CEEB/000/webp"
-        ]
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/lisa-1.mp3",
+        "title": "Lisa Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/lisa-2.mp3",
+        "title": "Lisa Clip 2"
+      },
+      {
+        "source": "https://example.com/audio/lisa-3.mp3",
+        "title": "Lisa Clip 3"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/FF69B4/000/webp",
+      "https://placehold.co/512x512/FF69B4/000/webp",
+      "https://placehold.co/1024x796/FF69B4/000/webp"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Maggie Simpson",
+    "url": "maggie-simpson",
+    "description": "The baby of the family who's surprisingly resourceful.",
+    "preview": "https://placehold.co/1240x740/87CEEB/000/webp",
+    "voiceActor": {
+      "name": "Various",
+      "photo": "https://placehold.co/512x512/87CEEB/000/webp"
     },
-    {
-        "id": "6",
-        "name": "Ned Flanders",
-        "url": "ned-flanders",
-        "description": "Homer's cheerful, religious neighbor who's always willing to lend a hand.",
-        "preview": "https://placehold.co/1240x740/7CFC00/000/webp",
-        "voiceActor": {
-            "name": "Harry Shearer",
-            "photo": "https://placehold.co/512x512/7CFC00/000/webp"
-        },
-        "voiceClips": [
-            {
-                "source": "https://example.com/audio/ned-1.mp3",
-                "title": "Ned Clip 1"
-            },
-            {
-                "source": "https://example.com/audio/ned-2.mp3",
-                "title": "Ned Clip 2"
-            },
-            {
-                "source": "https://example.com/audio/ned-3.mp3",
-                "title": "Ned Clip 3"
-            }
-        ],
-        "memes": [
-            "https://placehold.co/600x900/7CFC00/000/webp",
-            "https://placehold.co/512x512/7CFC00/000/webp",
-            "https://placehold.co/1024x796/7CFC00/000/webp"
-        ]
-    }
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/maggie-1.mp3",
+        "title": "Maggie Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/maggie-2.mp3",
+        "title": "Maggie Clip 2"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/87CEEB/000/webp",
+      "https://placehold.co/512x512/87CEEB/000/webp",
+      "https://placehold.co/1024x796/87CEEB/000/webp"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Ned Flanders",
+    "url": "ned-flanders",
+    "description": "Homer's cheerful, religious neighbor who's always willing to lend a hand.",
+    "preview": "https://placehold.co/1240x740/7CFC00/000/webp",
+    "voiceActor": {
+      "name": "Harry Shearer",
+      "photo": "https://placehold.co/512x512/7CFC00/000/webp"
+    },
+    "voiceClips": [
+      {
+        "source": "https://example.com/audio/ned-1.mp3",
+        "title": "Ned Clip 1"
+      },
+      {
+        "source": "https://example.com/audio/ned-2.mp3",
+        "title": "Ned Clip 2"
+      },
+      {
+        "source": "https://example.com/audio/ned-3.mp3",
+        "title": "Ned Clip 3"
+      }
+    ],
+    "memes": [
+      "https://placehold.co/600x900/7CFC00/000/webp",
+      "https://placehold.co/512x512/7CFC00/000/webp",
+      "https://placehold.co/1024x796/7CFC00/000/webp"
+    ]
+  }
 ]

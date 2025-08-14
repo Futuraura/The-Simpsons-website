@@ -1,4 +1,8 @@
-fetch("assets/data/characters.json")
+const forumPostButton = document.getElementById("newForumPost");
+
+forumPostButton.addEventListener("click", () => {});
+
+fetch("assets/data/forum.json")
   .then((response) => response.json())
   .then((characters) => {
     const charactersList = document.getElementById("characters-list");
