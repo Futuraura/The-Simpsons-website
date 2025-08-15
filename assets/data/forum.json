@@ -1,0 +1,50 @@
+[
+  {
+    "username": "Bartman22",
+    "title": "Eat My Shorts!",
+    "content": "Anyone else love skateboarding around Springfield?",
+    "timePosted": {
+      "minute": "15",
+      "hour": "09",
+      "day": "24",
+      "month": "05",
+      "year": "2024"
+    }
+  },
+  {
+    "username": "LisaSimpson",
+    "title": "Jazz Recommendations",
+    "content": "Favorite jazz albums? I love Coltrane and Miles Davis, but I'm looking for something new and exciting. Any suggestions from fellow jazz fans?",
+    "timePosted": {
+      "minute": "42",
+      "hour": "17",
+      "day": "24",
+      "month": "05",
+      "year": "2024"
+    }
+  },
+  {
+    "username": "HomerJ",
+    "title": "Mmm... Donuts",
+    "content": "What's your favorite donut?",
+    "timePosted": {
+      "minute": "03",
+      "hour": "08",
+      "day": "25",
+      "month": "05",
+      "year": "2024"
+    }
+  },
+  {
+    "username": "MargeB",
+    "title": "Family Recipes",
+    "content": "Sharing my famous pork chop recipe! Who wants it?",
+    "timePosted": {
+      "minute": "27",
+      "hour": "12",
+      "day": "25",
+      "month": "05",
+      "year": "2024"
+    }
+  }
+]
